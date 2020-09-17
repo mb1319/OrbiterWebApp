@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-gb">
+<meta charset="utf-8">
+<title>System Creator</title>
+<link rel="stylesheet" href="default.css">
+<script type="module" src="./main.js"></script>
+
+<body>
+    <header aria-label="To create doubleclick, to delete single click">
+        To create just double click! To delete a specific planet - click your mouse over it
+    </header >
+    <canvas id="canvas" aria-label="The canvas where the system is displayed" role="main">
+        Your broswer does not support html5 canvas. Sorry.
+    </canvas>
+    <footer aria-label = "Advanced and keyboard only options below">
+        Create new and exciting solar systems! Advanced and keyboard only options below
+    </footer>
+
+<div class="buttons" aria-label="button div">
+    <button id="NewRandomPlanet" aria-label="New Random Planet Button">Add New Random Planet</button>
+    <button id="NewCustomPlanet" aria-label="New Custom Planet Button">Add New Custom Planet</button>
+    <button id=Clear aria-label="Clear all button">Clear All</button>
+    <button id=DelLast aria-label="Delete Last Planet button">Delete Last Planet</button>
+    <button id="OurSolarSystem" aria-label="button that adds a representation of our solar system to the canvas">Add Our Solar System</button>
+    <button id="SaveSystem" aria-label="Save Current system button">Save System</button>
+    <button id="LoadSystem" aria-label="Load saved system buttom">Load System</button>
+</div>
+
+<div class="grouper">
+    <div class="slOrbCont">
+        <h2>Orbit Radius Preview slider</h2>
+        <input type="range" min="40" max="500" value="140"
+        class="slOrb" id="OrbitSlider" aria-label="Slider to change orbit of custom planet" 
+        tabindex = "0" aria-valuemax="500" aria-valuemin="50">
+    </div>
+    <div class="slRadCont"><h2>Custom Planet Radius slider</h2>
+        <input type="range" min="2" max="30" value="8"
+        class="slRad" id="RadiusSlider" aria-label="Slider to change the plantary radius of custom planet" 
+        tabindex = "0" aria-valuemax="30" aria-valuemin="2">
+    </div>
+
+    <div class="slRGB"><h2>RGB slider</h2>
+        <input type="range" min="0" max="255" value="140" 
+        class="slR" id="RSlider" aria-label="RGB red slider 0-255" 
+        tabindex="0" aria-valuemax="255" aria-valuemin="0">
+        <input type="range" min="0" max="255" value="90" 
+        class="slG" id="GSlider" aria-label="RGB green slider 0-255" 
+        tabindex="0" aria-valuemax="255" aria-valuemin="0">
+        <input type="range" min="0" max="255" value="190" 
+        class="slB" id="BSlider" aria-label="RGB blue slider 0-255" 
+        tabindex="0" aria-valuemax="255" aria-valuemin="0">
+    </div>
+    
+</div>
+
+<div id="tablecontainer">
+    <table id="table"></table>
+</div>
+
+</body>

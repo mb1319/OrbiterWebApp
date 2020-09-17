@@ -1,0 +1,269 @@
+:root
+{
+/* dimensions */
+    --banner-height: 30px;
+    --nav-width: 300px;
+/* colours */
+    --palette-accent0: rgb(255, 230, 0);
+    --palette-accent1: rgb(202, 190, 255);
+    --palette-accent2: #f08;
+    --palette-accent3: #e48;
+    --palette-base0: #232629;
+    --palette-base1: #2d3136;
+    --palette-base2: #31363b;
+    --palette-base3: #4d5057;
+    --palette-base4: #616569;
+    --palette-base5: #eff0f1;
+    --palette-secondary0: #345e75;
+    --palette-secondary1: #15113e;
+    --font: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background-color: var(--palette-secondary1)
+}
+
+
+canvas
+{
+    border: 0px solid var(--palette-accent0);
+    background-image: url("Starry_Sky.jpg");
+    position: relative;
+    top: 0;
+    
+}
+
+header
+{
+    background: var(--palette-accent0);
+    text-align: center;
+    font-family: var(--font);
+    font-style: italic;
+    height: var(--banner-height);
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+footer
+{
+    background: var(--palette-accent0);
+    text-align: center;
+    font-family: var(--font);
+    font-style: italic;
+    height: var(--banner-height);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.buttons
+{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+button
+{
+    width: 100%;
+    height: 10%;
+    font-family: var(--font);
+    background: var(--palette-accent1);
+    transition-duration: 0.1s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.grouper
+{
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 70% + var(--banner-height);
+}
+
+h2
+{
+    color: white;
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+
+.slOrb {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slOrb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+  }
+  
+  .slOrb::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+  }
+
+  .slRad {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slRad::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+  }
+  .slRad::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+  }
+
+  .slR {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slR::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+  .slR::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+
+  .slG {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slG::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(0, 255, 0);
+    cursor: pointer;
+  }
+  .slG::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(0, 255, 0);;
+    cursor: pointer;
+  }
+
+  .slB {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slB::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(0, 0, 255);
+    cursor: pointer;
+  }
+  .slB::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(0, 0, 255);;
+    cursor: pointer;
+  }
+
+  
+th, td
+{
+    border: 1px solid white;
+    font-family: var(--font);
+    color: white;
+    border-collapse: collapse;
+    position: relative;
+    
+}
+
+table
+{
+  border: 1px solid white;
+  font-family: var(--font);
+  color: white;
+  border-collapse: collapse;
+  position: relative;
+  width: 100%;
+  top: 170%;
+  text-align: center;
+  vertical-align: middle;
+}

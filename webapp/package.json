@@ -1,0 +1,17 @@
+{
+  "name": "webapp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Erroe: no test specified\" && exit1",
+    "start": "node server.js"
+  },
+  "author": "matvey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.2.0"
+  }
+}

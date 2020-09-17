@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Node Server",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"],
+            "program": "${workspaceFolder}/server.js"
+        },
+        {
+            "name":"Firefox Debugger",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:8080/index.html",
+            "webRoot": "${workspaceFolder}/static"
+            
+        },
+        {
+            "name": "Mocha Tests",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "reloadOnAttach": true,
+            "file":"${workspaceFolder}/static/test.html",
+            "preferences": {
+                "security.fileuri.strict_origin_policy": false
+            },
+            "clearConsoleOnReload": true
+        }
+    ]
+}
